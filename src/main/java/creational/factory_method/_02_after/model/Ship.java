@@ -1,7 +1,7 @@
 package creational.factory_method._02_after.model;
 
-import creational.abstract_factory._02_after.Anchor;
-import creational.abstract_factory._02_after.Wheel;
+import creational.abstract_factory._02_after.model.intf.Anchor;
+import creational.abstract_factory._02_after.model.intf.Wheel;
 
 public class Ship {
     private String name;

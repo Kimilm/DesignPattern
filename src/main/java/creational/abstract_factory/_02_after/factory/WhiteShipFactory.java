@@ -1,14 +1,13 @@
-package creational.abstract_factory._02_after;
+package creational.abstract_factory._02_after.factory;
 
-import creational.abstract_factory._01_before.WhiteAnchor;
-import creational.abstract_factory._01_before.WhiteWheel;
+import creational.abstract_factory._02_after.factory.intf.ShipPartsFactory;
 import creational.factory_method._02_after.factory.abst.DefaultShipFactory;
 import creational.factory_method._02_after.model.Ship;
 import creational.factory_method._02_after.model.WhiteShip;
 
 public class WhiteShipFactory extends DefaultShipFactory {
 
-    private ShipPartsFactory shipPartsFactory;
+    private final ShipPartsFactory shipPartsFactory;
 
     public WhiteShipFactory(ShipPartsFactory shipPartsFactory) {
         this.shipPartsFactory = shipPartsFactory;
