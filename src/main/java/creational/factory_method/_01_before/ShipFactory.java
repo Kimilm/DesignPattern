@@ -1,6 +1,8 @@
 package creational.factory_method._01_before;
 
 public class ShipFactory {
+
+    // 주석을 봐야 코드를 읽을 수 있음
     public static Ship orderShip(String name, String email) {
         //validate
         if (name == null || name.isEmpty()) {
