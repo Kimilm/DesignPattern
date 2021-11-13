@@ -2,17 +2,16 @@ package creational.factory_method._02_after;
 
 import creational.factory_method._02_after.factory.BlackShipFactory;
 import creational.factory_method._02_after.factory.WhiteShipFactory;
-import creational.factory_method._02_after.model.Ship;
+import creational.factory_method._02_after.factory.intf.ShipFactory;
 
 public class Client {
     public static void main(String[] args) {
         Client client = new Client();
+        client.print(new WhiteShipFactory(), "whiteShip", "kimilm@email.com");
+        client.print(new BlackShipFactory(), "blackShip", "kimilm@email.com");
+    }
 
-        Ship whiteShip = new WhiteShipFactory().orderShip("whiteShip", "kimilm@email.com");
-        System.out.println(whiteShip);
-
-        // 새로운 배를 생성하는 기능이 추가되었을 때 기존의 코드에 변경이 있으면 안 됨
-        Ship blackShip = new BlackShipFactory().orderShip("blackShip", "kimilm@email.com");
-        System.out.println(blackShip);
+    private void print(ShipFactory shipFactory, String name, String email) {
+        System.out.println(shipFactory.orderShip(name, email));
     }
 }
