@@ -1,4 +1,6 @@
 package creational.abstract_factory._01_before;
 
-public class WhiteWheel {
+import creational.abstract_factory._02_after.Wheel;
+
+public class WhiteWheel implements Wheel {
 }
