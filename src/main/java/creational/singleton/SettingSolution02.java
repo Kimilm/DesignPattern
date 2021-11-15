@@ -2,7 +2,7 @@ package creational.singleton;
 
 public class SettingSolution02 {
 
-    private static final SettingSolution02 instance = new SettingSolution02();
+    private static final SettingSolution02 INSTANCE = new SettingSolution02();
 
     private SettingSolution02() {
 
@@ -15,6 +15,6 @@ public class SettingSolution02 {
     // 단점: 미리 만든다는 그 자체가 단점이 될 수 있음, 인스턴스 생성에 많은 리소스가 소요되는 경우 만들어두고 안 쓰면 손해
 
     public static synchronized SettingSolution02 getInstance() {
-        return instance;
+        return INSTANCE;
     }
 }
