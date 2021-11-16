@@ -36,7 +36,33 @@ public class App {
             settings1 = (SettingSolution05) in.readObject();
         }
         // 직렬화/역직렬화는 많이 사용되는 코드가 아니긴 한데 이런 가능성이 존재하긴 한다.
-        System.out.println("직렬화/역직렬화");
+        // 지금은 readResolver를 오버라이딩해서 해결됨
+        System.out.println("class 직렬화/역직렬화");
+        System.out.println((settings == settings1) + "\n");
+
+        // solution06
+        // reflection 단에서 enum 의 생성자에 대한 접근은 막혀있다.
+        SettingSolution06 settingSolution06 = SettingSolution06.INSTANCE;
+        SettingSolution06 settingSolution06_1 = null;
+
+        try {
+            Constructor<?>[] declaredConstructors = SettingSolution06.class.getDeclaredConstructors();
+            for (Constructor<?> declaredConstructor : declaredConstructors) {
+                declaredConstructor.setAccessible(true);
+                settingSolution06_1 = (SettingSolution06) declaredConstructor.newInstance("INSTANCE");
+            }
+        } catch (Exception e) {
+            System.out.println("reflection can not access enum constructor\n");
+        }
+
+        // enum 은 자체로 Serializable 을 구현하고 있어서 별다른 처리 없이도 직렬화/역직렬화에 안전하다.
+        try (ObjectOutput out = new ObjectOutputStream((new FileOutputStream("settings.obj")))) {
+            out.writeObject(settingSolution06);
+        }
+        try (ObjectInput in = new ObjectInputStream(new FileInputStream("settings.obj"))) {
+            settingSolution06_1 = (SettingSolution06) in.readObject();
+        }
+        System.out.println("enum 직렬화/역직렬화");
         System.out.println((settings == settings1) + "\n");
     }
 }

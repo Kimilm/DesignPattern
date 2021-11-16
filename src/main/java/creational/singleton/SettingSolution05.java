@@ -15,7 +15,7 @@ public class SettingSolution05 implements Serializable {
 
     // 해결방안 05
     // 1. reflection -> 못 막는다
-    // 2. 직렬화 / 역직렬화 -> Serializable 내부에 명시적으로 선언되어있지는 않지만 역직렬화 과정에 사용되는 readResolve() 메서드를 오버로딩
+    // 2. 직렬화 / 역직렬화 -> Serializable 내부에 명시적으로 선언되어있지는 않지만 역직렬화 과정에 사용되는 readResolve() 메서드를 오버라이딩
     //                  -> 이렇게 되면 역직렬화시 new 를 사용하지 않게 됨
 
     private static class SettingHolder {
