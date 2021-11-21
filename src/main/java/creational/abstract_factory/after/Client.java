@@ -6,7 +6,7 @@ import creational.abstract_factory.after.factory.WhiteShipPartsProFactory;
 import creational.abstract_factory.after.factory.intf.ShipFactoryForAbst;
 import creational.abstract_factory.before.model.Ship;
 
-public class ShipInventory {
+public class Client {
     public static void main(String[] args) {
         ShipFactoryForAbst shipFactory = new WhiteShipFactory(new WhiteShipPartsFactory());
         Ship ship = shipFactory.createShip();
