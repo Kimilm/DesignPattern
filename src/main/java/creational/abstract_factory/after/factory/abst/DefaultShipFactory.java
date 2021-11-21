@@ -1,11 +1,11 @@
 package creational.abstract_factory.after.factory.abst;
 
-import creational.abstract_factory.after.factory.intf.ShipFactoryForAbst;
+import creational.abstract_factory.after.factory.intf.ShipFactory;
 import creational.abstract_factory.before.model.Ship;
 
 // Java 8의 경우 implement 내에서 private 키워드가 사용이 불가능
 // 중간에 추상 클래스를 하나 더 두면 된다
-public abstract class DefaultShipFactory implements ShipFactoryForAbst {
+public abstract class DefaultShipFactory implements ShipFactory {
     @Override
     public Ship orderShip(String name, String email) {
         validate(name, email);
