@@ -1,7 +1,7 @@
 package creational.abstract_factory.after.factory;
 
-import creational.abstract_factory.after.factory.abst.DefaultShipFactory;
-import creational.abstract_factory.after.factory.intf.ShipPartsFactory;
+import creational.abstract_factory.common.factory.abst.DefaultShipFactory;
+import creational.abstract_factory.common.factory.intf.ShipPartsFactory;
 import creational.abstract_factory.common.model.ship.Ship;
 import creational.abstract_factory.common.model.ship.WhiteShip;
 

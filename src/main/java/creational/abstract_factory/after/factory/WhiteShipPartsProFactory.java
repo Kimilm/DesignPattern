@@ -1,6 +1,6 @@
 package creational.abstract_factory.after.factory;
 
-import creational.abstract_factory.after.factory.intf.ShipPartsFactory;
+import creational.abstract_factory.common.factory.intf.ShipPartsFactory;
 import creational.abstract_factory.common.model.parts.WhiteAnchorPro;
 import creational.abstract_factory.common.model.parts.WhiteWheelPro;
 import creational.abstract_factory.common.model.parts.intf.Anchor;

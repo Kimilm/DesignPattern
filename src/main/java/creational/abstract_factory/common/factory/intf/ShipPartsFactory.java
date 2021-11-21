@@ -1,4 +1,4 @@
-package creational.abstract_factory.after.factory.intf;
+package creational.abstract_factory.common.factory.intf;
 
 import creational.abstract_factory.common.model.parts.intf.Anchor;
 import creational.abstract_factory.common.model.parts.intf.Wheel;

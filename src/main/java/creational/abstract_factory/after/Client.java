@@ -3,7 +3,7 @@ package creational.abstract_factory.after;
 import creational.abstract_factory.after.factory.WhiteShipFactory;
 import creational.abstract_factory.after.factory.WhiteShipPartsFactory;
 import creational.abstract_factory.after.factory.WhiteShipPartsProFactory;
-import creational.abstract_factory.after.factory.intf.ShipFactory;
+import creational.abstract_factory.common.factory.intf.ShipFactory;
 import creational.abstract_factory.common.model.ship.Ship;
 
 public class Client {

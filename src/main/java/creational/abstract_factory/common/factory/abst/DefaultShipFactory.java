@@ -1,6 +1,6 @@
-package creational.abstract_factory.after.factory.abst;
+package creational.abstract_factory.common.factory.abst;
 
-import creational.abstract_factory.after.factory.intf.ShipFactory;
+import creational.abstract_factory.common.factory.intf.ShipFactory;
 import creational.abstract_factory.common.model.ship.Ship;
 
 // Java 8의 경우 implement 내에서 private 키워드가 사용이 불가능
