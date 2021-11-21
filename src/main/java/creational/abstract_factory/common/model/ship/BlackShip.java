@@ -1,4 +1,4 @@
-package creational.abstract_factory.before.model;
+package creational.abstract_factory.common.model.ship;
 
 public class BlackShip extends Ship {
 

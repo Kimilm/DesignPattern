@@ -1,6 +1,6 @@
 package creational.abstract_factory.after.factory.intf;
 
-import creational.abstract_factory.before.model.Ship;
+import creational.abstract_factory.common.model.ship.Ship;
 
 public interface ShipFactory {
     // interface라서 굳이 public을 붙이지 않아도 됨

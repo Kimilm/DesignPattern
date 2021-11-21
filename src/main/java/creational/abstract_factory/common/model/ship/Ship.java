@@ -1,7 +1,7 @@
-package creational.abstract_factory.before.model;
+package creational.abstract_factory.common.model.ship;
 
-import creational.abstract_factory.before.model.intf.Anchor;
-import creational.abstract_factory.before.model.intf.Wheel;
+import creational.abstract_factory.common.model.parts.intf.Anchor;
+import creational.abstract_factory.common.model.parts.intf.Wheel;
 
 public class Ship {
     private String name;

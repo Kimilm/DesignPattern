@@ -2,8 +2,8 @@ package creational.abstract_factory.after.factory;
 
 import creational.abstract_factory.after.factory.abst.DefaultShipFactory;
 import creational.abstract_factory.after.factory.intf.ShipPartsFactory;
-import creational.abstract_factory.before.model.Ship;
-import creational.abstract_factory.before.model.WhiteShip;
+import creational.abstract_factory.common.model.ship.Ship;
+import creational.abstract_factory.common.model.ship.WhiteShip;
 
 public class WhiteShipFactory extends DefaultShipFactory {
 

@@ -4,7 +4,7 @@ import creational.abstract_factory.after.factory.WhiteShipFactory;
 import creational.abstract_factory.after.factory.WhiteShipPartsFactory;
 import creational.abstract_factory.after.factory.WhiteShipPartsProFactory;
 import creational.abstract_factory.after.factory.intf.ShipFactory;
-import creational.abstract_factory.before.model.Ship;
+import creational.abstract_factory.common.model.ship.Ship;
 
 public class Client {
     public static void main(String[] args) {
