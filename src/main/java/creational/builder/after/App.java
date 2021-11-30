@@ -14,8 +14,13 @@ public class App {
                 .addPlan(0, "저녁 식사")
                 .getPlan();
 
-        TourPlan longBeachTrip = builder.title("롱비치")
+        TourPlan longBeachPlan = builder.title("롱비치")
                 .startDate(LocalDate.of(2021, 7, 15))
                 .getPlan();
+
+        // 디렉터 사용 후
+        TourDirector director = new TourDirector(new DefaultTourBuilder());
+        TourPlan cancunTrip = director.cancunTrip();
+        TourPlan longBeachTrip = director.longBeachTrip();
     }
 }
