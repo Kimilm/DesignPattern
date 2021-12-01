@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 public interface TourPlanBuilder {
     // to method chaining
+    default TourPlanBuilder newInstance() {
+        return null;
+    }
+
     TourPlanBuilder title(String title);
 
     TourPlanBuilder nightsAndDays(int nights, int days);
